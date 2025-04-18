@@ -5,44 +5,57 @@
   box-sizing: border-box;
 }
 
-/* Remove default margin. */
+/* Remove default margin and padding. */
 * {
   margin: 0;
+  padding: 0;
 }
 
-body {
-  /* Add accessible line height. */
+/* Add padding to lists for list items markers (after removing all padding above). */
+ol,
+ul {
+  padding-inline-start: 2.25em;
+}
+
+html {
+  /* Add accessible line-height. */
   line-height: 1.5;
   /* Improve text rendering. */
   -webkit-font-smoothing: antialiased;
 }
 
 /* Improve media defaults. */
-img,
-picture,
-video,
 canvas,
-svg {
+iframe,
+img,
+object,
+picture,
+svg,
+video {
   display: block;
   max-width: 100%;
 }
 
 /* Inherit fonts for form controls. */
-input,
 button,
-textarea,
-select {
+input,
+select,
+textarea {
   font: inherit;
 }
 
 /* Avoid text overflows. */
-p,
+blockquote,
+dd,
+dt,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+li,
+p {
   overflow-wrap: break-word;
 }
 
