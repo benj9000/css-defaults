@@ -1,0 +1,75 @@
+:root {
+  /* Tailwind CSS font stacks. */
+  --font-stack-default-tailwind: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-stack-serif-tailwind: ui-serif, "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  --font-stack-mono-tailwind: ui-monospace, "SFMono-Regular", "Menlo", "Monaco", "Consolas",
+    "Liberation Mono", "Courier New", monospace;
+
+  /* Bootstrap font stacks. */
+  --font-stack-default-bootstrap: system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  --font-stack-mono-bootstrap: "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono",
+    "Courier New", monospace;
+
+  /* Modern Font Stacks font stacks. */
+  --font-stack-default-modern-font-stacks: system-ui, sans-serif;
+  --font-stack-serif-modern-font-stacks: "Charter", "Bitstream Charter", "Sitka Text", "Cambria",
+    serif;
+  --font-stack-mono-modern-font-stacks: ui-monospace, "Cascadia Code", "Source Code Pro", "Menlo",
+    "Consolas", "DejaVu Sans Mono", monospace;
+
+  /* GitHub font stacks. */
+  --font-stack-default-github: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+    "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-stack-mono-github: ui-monospace, "SFMono-Regular", "SF Mono", "Menlo", "Consolas",
+    "Liberation Mono", monospace;
+
+  /* Select default and mono stacks. */
+  --font-stack-default: var(--font-stack-default-tailwind, system-ui, sans-serif);
+  --font-stack-mono: var(--font-stack-mono-tailwind, monospace);
+}
+
+html {
+  /* Set default font stack as default font family. */
+  font-family: var(--font-stack-default);
+  /* Use a more readable tab size. */
+  tab-size: 4;
+}
+
+code,
+kbd,
+pre,
+samp {
+  /* Set monospaced font stack for appropriate elements. */
+  font-family: var(--font-stack-mono);
+  /* Correct the odd `em` font sizing. */
+  font-size: 1em;
+}
+
+/* Set the correct font weight in Chrome and Safari. */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/* Set the correct "small" font size. */
+small {
+  font-size: 80%;
+}
+
+/* Prevent `sub` and `sup` elements from affecting the line height. */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
