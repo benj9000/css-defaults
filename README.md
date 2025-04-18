@@ -1,8 +1,16 @@
 # CSS defaults
 
-A collection of CSS rules that I like to build on.
+A collection of stylesheets that I like to build on.
 
-## Sources
+## Stylesheets
+
+There is a hierarchy between the stylesheets.
+Higher-level sheets may not contain rules that are already covered by lower-level sheets.
+However, the goal is that each stylesheet forms a logical group of CSS rules that can stand on its own.
+
+### `reset.css`
+
+A stylesheet to set sane defaults, reduce browser inconsistencies and improve user and developer experiences based on the following resources:
 
 - Base rule set: Josh W. Comeau's [A Modern CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/).
     - Without creating a root stacking context.
