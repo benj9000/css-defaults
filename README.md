@@ -19,7 +19,8 @@ A stylesheet to set sane defaults, reduce browser inconsistencies and improve us
     - Make `iframe` and `object` block elements like other media elements.
     - Additionally avoid text overflow for `li`, `dt`, `dd`, and `blockquote` elements.
     - Move global typography sizing rules to the `html` selector.
-- Fix for switching to landscape mode on mobile Safari: [Your CSS reset needs text-size-adjust (probably)](https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/).
+- Prevent font size inflation: [Your CSS reset needs text-size-adjust (probably)](https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/).
+    - With caring about vendor prefixes.
 
 ### `typography.css`
 
